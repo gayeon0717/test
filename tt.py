@@ -1,5 +1,3 @@
-
-
 import streamlit as st
 import time
 # import random
@@ -8,11 +6,11 @@ import numpy as np
 
 col1, col2, col3 = st.columns(3)
 
-    c1 = st.sidebar.radio('선의 색을 선택하시오', ['red', 'green', 'blue', 'perple', 'orange'])
-    s1 = st.sidebar.radio('선의 스타일을 선택하시오', ['-', '--', ':', '-.'])
-    m1 = st.sidebar.radio('마커의 스타일을 선택하시오', ['o', '^', 's', 'p'])
+c1 = st.sidebar.radio('선의 색을 선택하시오', ['red', 'green', 'blue', 'perple', 'orange'])
+s1 = st.sidebar.radio('선의 스타일을 선택하시오', ['-', '--', ':', '-.'])
+m1 = st.sidebar.radio('마커의 스타일을 선택하시오', ['o', '^', 's', 'p'])
 
-# fig,ax = plt.subplots()
+fig,ax = plt.subplots()
 
 love = []
 y = []
